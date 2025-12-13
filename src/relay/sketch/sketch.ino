@@ -12,7 +12,7 @@ const char* mqttServer = "broker.emqx.io";
 const int mqttPort = 1883;
 const char* mqttUser = "";
 const char* mqttPassword = "";
-const char* topic = "23clc06/23127491-23127483-23127467/out";
+const char* topic = "23clc06/23127491-23127483-23127467/in";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
