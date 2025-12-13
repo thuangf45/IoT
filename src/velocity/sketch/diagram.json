@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Minh Thuận Nguyễn",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 19.2, "left": 33.64, "attrs": {} },
+    { "type": "wokwi-ky-040", "id": "encoder1", "top": -65.5, "left": -183.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "encoder1:CLK", "esp:2", "green", [ "h240", "v240", "h0" ] ],
+    [ "encoder1:DT", "esp:4", "green", [ "h220.8", "v211.3" ] ],
+    [ "encoder1:VCC", "esp:5V", "red", [ "h57.6", "v250" ] ],
+    [ "encoder1:GND", "esp:GND.1", "black", [ "h19.2", "v192.8" ] ]
+  ],
+  "dependencies": {}
+}
