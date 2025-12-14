@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "author": "Đức Thịnh Dương",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 134.4, "left": -23.96, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 121.2, "left": 90.2, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -19.5,
+      "left": -53.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 206.4,
+      "left": 85.85,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "v19.2", "h38.8" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "esp:2", "green", [ "v56.4", "h-38.4" ] ],
+    [ "led1:C", "esp:GND.2", "green", [ "v0" ] ],
+    [ "ldr1:AO", "esp:32", "green", [ "v19.2", "h-56.9", "v105.6" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "v28.8", "h-67.2", "v38.4" ] ]
+  ],
+  "dependencies": {}
+}
