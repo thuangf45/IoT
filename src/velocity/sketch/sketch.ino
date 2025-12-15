@@ -21,7 +21,7 @@ const int pinDT  = 4;   // nối chân DT vào GPIO4 (tùy chọn, để xác đ
 volatile int pulseCount = 0;
 unsigned long lastTime = 0;
 float wheelCircumference = 1.57; // mét (ví dụ bánh xe đường kính 0.5m)
-int pulsesPerRevolution = 1;   // số xung cho 1 vòng encoder (KY-040 thường ~20 bước/vòng)
+int pulsesPerRevolution = 3;   // số xung cho 1 vòng encoder (KY-040 thường ~20 bước/vòng)
 
 // Hàm ngắt: mỗi lần có xung từ CLK thì tăng biến đếm
 void IRAM_ATTR readEncoder() {
