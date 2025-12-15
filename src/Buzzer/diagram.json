@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp1", "top": 60, "left": 135.84, "attrs": {} },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 62.4, "left": 8, "attrs": { "volume": "0.1" } }
+  ],
+  "connections": [
+    [ "esp1:TX", "$serialMonitor:RX", "", [] ], 
+    [ "esp1:RX", "$serialMonitor:TX", "", [] ],
+    [ "bz1:2", "esp1:12", "green", [ "v0" ] ],
+    [ "bz1:1", "esp1:GND.1", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

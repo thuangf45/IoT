@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp1", "top": 60, "left": 10, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 181.4,
+      "left": 144.4,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "btn1:2.r", "esp1:4", "green", [ "h0" ] ],
+    [ "btn1:1.r", "esp1:GND.2", "black", [ "h0" ] ],
+    
+    [ "esp1:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp1:RX", "$serialMonitor:TX", "", [] ]
+  ],
+  "dependencies": {}
+}
