@@ -1,0 +1,1975 @@
+[
+    {
+        "id": "a8b7dad562bce556",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c1af418266c0b277",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cf4d34c4f50e4ab4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#56d1d7",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#3e7e6b",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#3e7e6b",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#72eecf",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#5aae95",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#3653c9",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#3e7e6b",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "82a5e1c00c615aa0",
+        "type": "mqtt-broker",
+        "name": "Server",
+        "broker": "http://broker.hivemq.com/",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e1e4c62037626eb8",
+        "type": "ui_group",
+        "name": "Input User",
+        "tab": "c1af418266c0b277",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ca3e831c95101162",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "c1af418266c0b277",
+        "order": 5,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d5d2d5fa1fc29455",
+        "type": "ui_group",
+        "name": "Input Environment",
+        "tab": "c1af418266c0b277",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd59ce93340abdd1",
+        "type": "mqtt-broker",
+        "name": "23124791",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c4365b2d258185a5",
+        "type": "ui_group",
+        "name": "Analysis",
+        "tab": "c1af418266c0b277",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "92b69d34ad87d64d",
+        "type": "ui_group",
+        "name": "Violation Monitor",
+        "tab": "c1af418266c0b277",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "098b42150c2f0fcb",
+        "type": "mqtt-broker",
+        "name": "Server 1",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ad9ea5942d3d9534",
+        "type": "mqtt-broker",
+        "name": "Server 2",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dc0b13e6fad8121d",
+        "type": "mqtt-broker",
+        "name": "Server 3",
+        "broker": "mqtt.eclipseprojects.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d0599fa6836082e3",
+        "type": "ui_spacer",
+        "z": "a8b7dad562bce556",
+        "name": "spacer",
+        "group": "ca3e831c95101162",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c665e7c0feb139c2",
+        "type": "ui_spacer",
+        "z": "a8b7dad562bce556",
+        "name": "spacer",
+        "group": "ca3e831c95101162",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "baa6950c5de45a2d",
+        "type": "ui_spacer",
+        "z": "a8b7dad562bce556",
+        "name": "spacer",
+        "group": "ca3e831c95101162",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6e2a1723d964bae1",
+        "type": "ui_spacer",
+        "z": "a8b7dad562bce556",
+        "name": "spacer",
+        "group": "ca3e831c95101162",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fd7915eda66e757d",
+        "type": "ui_spacer",
+        "z": "a8b7dad562bce556",
+        "name": "spacer",
+        "group": "ca3e831c95101162",
+        "order": 14,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "64b598faf15a255e",
+        "type": "mqtt in",
+        "z": "a8b7dad562bce556",
+        "name": "esp32",
+        "topic": "23clc06/23127491-23127483-23127467/in",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad9ea5942d3d9534",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "9729607774cebe66",
+                "7ff99e5be6390be6"
+            ]
+        ]
+    },
+    {
+        "id": "2d34c17d4d5807ee",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Cloud In",
+        "func": "// lấy dữ liệu từ flow context\nvar temperature = flow.get(\"temperature\");\nvar humidity = flow.get(\"humidity\");\nvar brightness = flow.get(\"brightness\");\nvar velocity = flow.get(\"velocity\");\nvar distance = flow.get(\"distance\");\n\n// tạo URL update cho ThingSpeak\nmsg.url = \"https://api.thingspeak.com/update?api_key=ST0K7JT3JRVC4PFI\"\n    + \"&field1=\" + (temperature || \"\")\n    + \"&field2=\" + (humidity || \"\")\n    + \"&field3=\" + (brightness || \"\")\n    + \"&field4=\" + (velocity || \"\")\n    + \"&field5=\" + (distance || \"\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "261703c5d2ae0c4b"
+            ]
+        ]
+    },
+    {
+        "id": "0e72a75000c0876b",
+        "type": "ui_chart",
+        "z": "a8b7dad562bce556",
+        "name": "Temperature",
+        "group": "d5d2d5fa1fc29455",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52a9bbca6bc511e5",
+        "type": "mqtt out",
+        "z": "a8b7dad562bce556",
+        "name": "esp32",
+        "topic": "23clc06/23127491/in",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ad9ea5942d3d9534",
+        "x": 590,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "574c4ca4d3373831",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Random Data",
+        "func": "// Hàm random trong khoảng\nfunction randomInRange(min, max) {\n    return Math.floor(Math.random() * (max - min + 1)) + min;\n}\n\n// Hàm tạo dao động \"thật hơn\"\nfunction realisticRandom(prev, min, max, commonMin, commonMax) {\n    let r = Math.random();\n\n    if (r < 0.4) {\n        // 40% dao động quanh mức phổ biến (common range)\n        let base = randomInRange(commonMin, commonMax);\n        let variation = (Math.random() * 0.2 - 0.1) * base; // ±10%\n        let newVal = base + variation;\n        return Math.min(max, Math.max(min, Math.round(newVal)));\n    } else if (r < 0.45) {\n        // 5% dao động nhẹ quanh giá trị trước đó\n        let variation = (Math.random() * 0.1 - 0.05) * prev; // ±5%\n        let newVal = prev + variation;\n        return Math.min(max, Math.max(min, Math.round(newVal)));\n    } else if (r < 0.5) {\n        // 5% dao động \"kì quặc\" (ngoài vùng phổ biến)\n        let newVal = randomInRange(min, max);\n        return newVal;\n    } else {\n        // 50% giữ nguyên giá trị trước đó\n        return prev !== undefined ? prev : randomInRange(commonMin, commonMax);\n    }\n}\n\n// Lấy giá trị trước đó từ flow context\nlet prevData = flow.get(\"prevData\") || {};\n\n// Sinh dữ liệu giả lập\nvar payload = {\n    type: \"Data\",\n    temperature: realisticRandom(prevData.temperature || 25, 10, 50, 28, 40),   // °C\n    humidity: realisticRandom(prevData.humidity || 50, 30, 90, 40, 60),        // %\n    brightness: realisticRandom(prevData.brightness || 500, 0, 1000, 200, 800),// lux\n    velocity: realisticRandom(prevData.velocity || 50, 0, 150, 40, 60),        // km/h\n    distance: realisticRandom(prevData.distance || 250, 0, 500, 100, 300)      // cm\n};\n\n// Lưu lại giá trị hiện tại để lần sau dùng\nflow.set(\"prevData\", payload);\n\nmsg.payload = JSON.stringify(payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "52a9bbca6bc511e5"
+            ]
+        ]
+    },
+    {
+        "id": "55dbfaa8b2191f55",
+        "type": "ui_chart",
+        "z": "a8b7dad562bce556",
+        "name": "Brightness",
+        "group": "d5d2d5fa1fc29455",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Brightness",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "5000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#fd7d0d",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#ffbb00"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd0af42c7f456c47",
+        "type": "ui_chart",
+        "z": "a8b7dad562bce556",
+        "name": "Velocity Timeline",
+        "group": "e1e4c62037626eb8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Velocity Timeline",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "150",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b02397b696319bd1",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Trigger Environment Danger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 640,
+        "wires": [
+            [
+                "f335eb7f8a0a60f9"
+            ]
+        ]
+    },
+    {
+        "id": "777e8ab80cde17f0",
+        "type": "ui_gauge",
+        "z": "a8b7dad562bce556",
+        "name": "Humidity",
+        "group": "d5d2d5fa1fc29455",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "units",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#00ff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 740,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ddd4bdc30febc817",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Trigger Check Violation",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 720,
+        "wires": [
+            [
+                "515fefab6b300997"
+            ]
+        ]
+    },
+    {
+        "id": "515fefab6b300997",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Count",
+        "func": "// Hàm kiểm tra vi phạm\nfunction isViolation(velocity, distance) {\n    // Ví dụ: vận tốc > 60 km/h hoặc khoảng cách < 50 cm thì coi là vi phạm\n    return (velocity > 60 || distance < 30);\n}\n\n// Lấy dữ liệu từ flow\nconst velocity = flow.get(\"velocity\");\nconst distance = flow.get(\"distance\");\n\n// Lấy lịch sử vi phạm từ flow, nếu chưa có thì tạo mảng rỗng\nlet violationHistory = flow.get(\"violationHistory\") || [];\n\n// Kiểm tra vi phạm\nif (isViolation(velocity, distance)) {\n    const now = Date.now();\n    let lastViolation = violationHistory[violationHistory.length - 1];\n\n    // Nếu chưa có lỗi nào hoặc đã cách nhau >= 1 phút thì thêm mới\n    if (!lastViolation || (now - lastViolation.timestamp >= 60000)) {\n        violationHistory.push({\n            velocity: velocity,\n            distance: distance,\n            timestamp: now\n        });\n    }\n}\n\n// Lưu lại lịch sử vào flow\nflow.set(\"violationHistory\", violationHistory);\n\n// Trả về số lần vi phạm hiện tại\nmsg.payload = violationHistory.length || 0;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 720,
+        "wires": [
+            [
+                "b9eca1b60e5360f1"
+            ]
+        ]
+    },
+    {
+        "id": "c589713d18f2d57a",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Cloud Out",
+        "func": "var payload = (typeof msg.payload === \"string\")\n    ? JSON.parse(msg.payload)\n    : msg.payload;\n\nvar feed = payload.feeds[0];\n\n// tạo msg cho từng output\nvar msg1 = feed.field1 !== null ? { payload: feed.field1 } : null;\nvar msg2 = feed.field2 !== null ? { payload: feed.field2 } : null;\nvar msg3 = feed.field3 !== null ? { payload: feed.field3 } : null;\nvar msg4 = feed.field4 !== null ? { payload: feed.field4 } : null;\nvar msg5 = feed.field5 !== null ? { payload: feed.field5 } : null;\n\nreturn [msg1, msg2, msg3, msg5];\n",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "0e72a75000c0876b"
+            ],
+            [
+                "777e8ab80cde17f0"
+            ],
+            [
+                "55dbfaa8b2191f55"
+            ],
+            [
+                "05c24ffa478d86c0"
+            ]
+        ]
+    },
+    {
+        "id": "05c24ffa478d86c0",
+        "type": "ui_chart",
+        "z": "a8b7dad562bce556",
+        "name": "Distance",
+        "group": "e1e4c62037626eb8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Distance",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "500",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3ec4e1b1d107d10",
+        "type": "ui_gauge",
+        "z": "a8b7dad562bce556",
+        "name": "Velocity (Live)",
+        "group": "e1e4c62037626eb8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Velocity (Live)",
+        "label": "units",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "150",
+        "colors": [
+            "#00ff00",
+            "#ffff00",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "8926b10b94454dfc",
+        "type": "ui_chart",
+        "z": "a8b7dad562bce556",
+        "name": "AI Analysis",
+        "group": "c4365b2d258185a5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "AI Analysis",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9eca1b60e5360f1",
+        "type": "ui_chart",
+        "z": "a8b7dad562bce556",
+        "name": "Check Violation",
+        "group": "92b69d34ad87d64d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Check Violation",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 600,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7975959196fef2ce",
+        "type": "mqtt out",
+        "z": "a8b7dad562bce556",
+        "name": "esp32",
+        "topic": "23clc06/23127491-23127483-23127467/out",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ad9ea5942d3d9534",
+        "x": 1010,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "aa1bb2ea3e314350",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 5",
+        "func": "// Sinh dữ liệu giả lập\nvar payload = {\n    type: \"Lock Request\"\n};\nconst msg1 = { payload: JSON.stringify(payload) };\nconst msg2 = {payload: \"success: Thực hiện thao tác thành công!\"};\n\nreturn [msg1, msg2];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 780,
+        "wires": [
+            [
+                "7975959196fef2ce"
+            ],
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "b5029dce7a95852d",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Lock Request",
+        "group": "ca3e831c95101162",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Lock Request",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Lock Request",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "ae80da64fba640cf",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "d": true,
+        "name": "Generate Data ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "574c4ca4d3373831"
+            ]
+        ]
+    },
+    {
+        "id": "37bdfc5c70690b99",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 6",
+        "func": "// Sinh dữ liệu giả lập\nvar payload = {\n    type: \"Lock\"\n};\n\nconst msg1 = { payload: JSON.stringify(payload) };\nconst msg2 = {payload: \"success: Thực hiện thao tác thành công!\"};\n\nreturn [msg1, msg2];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 820,
+        "wires": [
+            [
+                "7975959196fef2ce"
+            ],
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "853201b1a928f540",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Lock",
+        "group": "ca3e831c95101162",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Lock",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Lock",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 820,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "a4072e969b813247",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 7",
+        "func": "// Sinh dữ liệu giả lập\nvar payload = {\n    type: \"Unlock\"\n};\n\nconst msg1 = { payload: JSON.stringify(payload) };\nconst msg2 = {payload: \"success: Thực hiện thao tác thành công!\"};\n\nreturn [msg1, msg2];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 860,
+        "wires": [
+            [
+                "7975959196fef2ce"
+            ],
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "8317b75bd03c43dc",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Unlock",
+        "group": "ca3e831c95101162",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Unlock",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Unlock",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 860,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "2277fa9afa859c76",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Clear Violation",
+        "group": "ca3e831c95101162",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Violation",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Clear Violation",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1020,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "bea27f517f04a9e7",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 11",
+        "func": "flow.set(\"violationHistory\", []);\nmsg.payload = \"success: Thực hiện thao tác thành công!\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1020,
+        "wires": [
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "261703c5d2ae0c4b",
+        "type": "http request",
+        "z": "a8b7dad562bce556",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 570,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e85f30f76078baa",
+        "type": "http request",
+        "z": "a8b7dad562bce556",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/3189549/feeds.json?api_key=89TL01GQMO3W7D2V&results=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "c589713d18f2d57a"
+            ]
+        ]
+    },
+    {
+        "id": "9729607774cebe66",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Local Storage",
+        "func": "var payload = (typeof msg.payload === \"string\") \n    ? JSON.parse(msg.payload) \n    : msg.payload;\n\nif (payload.type === \"Data\") {\n    if (payload.temperature !== null) flow.set(\"temperature\", payload.temperature);\n    if (payload.humidity !== null)    flow.set(\"humidity\", payload.humidity);\n    if (payload.brightness !== null)  flow.set(\"brightness\", payload.brightness);\n    if (payload.velocity !== null)    flow.set(\"velocity\", payload.velocity);\n    if (payload.distance !== null)    flow.set(\"distance\", payload.distance);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08bc8309d1084001",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Set Data Cloud Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "2d34c17d4d5807ee"
+            ]
+        ]
+    },
+    {
+        "id": "a2ba1550aef8e142",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Get Data Cloud Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "7e85f30f76078baa"
+            ]
+        ]
+    },
+    {
+        "id": "f0eae16b4903ac78",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Get Data Cloud Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "adaac9f333f0fe1e"
+            ]
+        ]
+    },
+    {
+        "id": "adaac9f333f0fe1e",
+        "type": "http request",
+        "z": "a8b7dad562bce556",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/3189549/feeds.json?api_key=89TL01GQMO3W7D2V&results=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 560,
+        "wires": [
+            [
+                "27eaf837ec8e1d6e"
+            ]
+        ]
+    },
+    {
+        "id": "27eaf837ec8e1d6e",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Cloud Out",
+        "func": "var payload = (typeof msg.payload === \"string\")\n    ? JSON.parse(msg.payload)\n    : msg.payload;\n\nvar feed = payload.feeds[0];\n\nvar msg4 = feed.field4 !== null ? { payload: feed.field4 } : null;\n\n\nreturn [msg4, msg4];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 560,
+        "wires": [
+            [
+                "b3ec4e1b1d107d10"
+            ],
+            [
+                "dd0af42c7f456c47"
+            ]
+        ]
+    },
+    {
+        "id": "e1bc3c0f9c3c9d4a",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Notify Buzzer",
+        "group": "ca3e831c95101162",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Notify Buzzer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Notify Buzzer",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 900,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "d4bf6ee94cbe419c",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Notify Phone",
+        "group": "ca3e831c95101162",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Notify Phone",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Notify Phone",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 940,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "ca82a06c599e0f15",
+        "type": "ui_button",
+        "z": "a8b7dad562bce556",
+        "name": "Notify Email",
+        "group": "ca3e831c95101162",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Notify Email",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "Notify Email",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "7326b163b12abb97"
+            ]
+        ]
+    },
+    {
+        "id": "59da42f5c37a15f7",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 10",
+        "func": "// Fallback cho time: Nếu không có, lấy thời gian hiện tại (format giống ví dụ)\nconst time = msg.time || new Date().toLocaleString('vi-VN', { \n    day: '2-digit', \n    month: '2-digit', \n    year: 'numeric', \n    hour: '2-digit', \n    minute: '2-digit', \n    second: '2-digit', \n    hour12: true \n}).replace(',', ', ');  // Format: \"12/12/2025, 1:23:45 PM\" (dùng vi-VN cho tiếng Việt)\n\n// Fallback cho id: Nếu không có, tạo UUID đơn giản (v4 style, không cần thư viện)\nfunction generateUUID() {\n    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {\n        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);\n        return v.toString(16);\n    });\n}\nconst id = msg.id || generateUUID();  // Ví dụ: \"a1b2c3d4-e5f6-4789-8901-23456789abcd\"\n\n// Giữ nguyên các fallback khác\nconst location = msg.location || \"Trạm kiểm soát A12\";\nconst description = msg.description || \"Bạn vừa vi phạm giao thông (vượt đèn đỏ / quá tốc độ). Hình ảnh và biên bản đã được ghi nhận tự động bởi hệ thống camera.\";\nconst actions = msg.actions || [\n    \"Kiểm tra hình ảnh và biên bản trong hệ thống.\",\n    \"Đến kho bạc nhà nước để đóng phạt hoặc nộp đơn khiếu nại trong vòng 7 ngày.\",\n    \"Nếu cần hỗ trợ, liên hệ bộ phận hỗ trợ theo thông tin dưới.\"\n];\n\n// Tạo list actions HTML từ array\nconst actionsHtml = actions.map(action => `<li>${action}</li>`).join('');\n\nmsg.to = \"kingnemacc@gmail.com\";\nmsg.topic = \"Thông báo hệ thống\";\n\nmsg.payload = `\n    <!-- Email Notification Template - Responsive, inline CSS -->\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#f3f6f9;padding:30px 0;font-family:Arial,Helvetica,sans-serif;\">\n  <tr>\n    <td align=\"center\">\n      <table width=\"600\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06);\">\n        <!-- Header -->\n        <tr>\n          <td style=\"background:linear-gradient(90deg,#2563eb,#7c3aed);padding:22px 30px;color:#fff;\">\n            <h1 style=\"margin:0;font-size:20px;line-height:1.2;\">🔔 Thông báo hệ thống</h1>\n            <p style=\"margin:6px 0 0;font-size:13px;opacity:0.95;\">Hệ thống cảnh báo tự động — Vui lòng kiểm tra thông tin bên dưới.</p>\n          </td>\n        </tr>\n\n        <!-- Hero / Intro -->\n        <tr>\n          <td style=\"padding:22px 30px 0 30px;\">\n            <p style=\"margin:0 0 12px;color:#111;font-size:15px;line-height:1.5;\">\n              Xin chào <strong>Người dùng</strong>,\n            </p>\n            <p style=\"margin:0 0 12px;color:#333;font-size:14px;line-height:1.6;\">\n              Hệ thống vừa phát hiện một sự kiện quan trọng liên quan đến tài khoản của bạn. Vui lòng đọc kỹ nội dung dưới đây và làm theo hướng dẫn nếu cần.\n            </p>\n          </td>\n        </tr>\n\n        <!-- Content block -->\n        <tr>\n          <td style=\"padding:8px 30px 0 30px;\">\n            <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-radius:6px;background:#f8fafc;border:1px solid #edf2f7;padding:14px;\">\n              <tr>\n                <td style=\"font-size:13px;color:#555;line-height:1.6;\">\n                  <strong>Thời gian:</strong> ${time}<br/>\n                  <strong>Vị trí:</strong> ${location}<br/>\n                  <strong>Mô tả:</strong> ${description}<br/><br/>\n                  <strong>Hành động đề xuất:</strong>\n                  <ul style=\"margin:8px 0 0 18px;padding:0;color:#444;\">\n                    ${actionsHtml}\n                  </ul>\n                </td>\n              </tr>\n            </table>\n          </td>\n        </tr>\n\n        <!-- Big CTA -->\n        <tr>\n          <td align=\"center\" style=\"padding:18px 30px;\">\n            <a href=\"https://example.com/chi-tiet/${id}\" target=\"_blank\" style=\"display:inline-block;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600;background:linear-gradient(90deg,#06b6d4,#3b82f6);color:#fff;\">\n              Xem chi tiết & xử lý\n            </a>\n          </td>\n        </tr>\n\n        <!-- Secondary info / long text -->\n        <tr>\n          <td style=\"padding:0 30px 18px 30px;font-size:13px;color:#555;line-height:1.6;\">\n            <p style=\"margin:0 0 10px;\">\n              <strong>Ghi chú quan trọng:</strong> Nếu bạn cho rằng đây là nhầm lẫn, vui lòng chuẩn bị giấy tờ chứng minh và thực hiện khiếu nại theo thủ tục. Mọi thông tin gửi lên hệ thống sẽ được lưu trữ và sử dụng cho mục đích xử lý vi phạm.\n            </p>\n            <p style=\"margin:0;\">\n              <strong>Liên hệ hỗ trợ:</strong><br/>\n              Điện thoại: 1900-1234 • Email: support@example.com • Giờ làm việc: 08:00–17:00 (T2–T6)\n            </p>\n          </td>\n        </tr>\n\n        <!-- Footer -->\n        <tr>\n          <td style=\"background:#fafafa;border-top:1px solid #f0f0f0;padding:14px 30px;font-size:12px;color:#7a7a7a;\">\n            <div style=\"display:flex;justify-content:space-between;align-items:center;\">\n              <div>© 2025 Hệ thống Thông báo</div>\n              <div style=\"font-size:11px;opacity:0.9;\">Bạn nhận email này vì đã đăng ký dịch vụ thông báo tự động.</div>\n            </div>\n          </td>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>\n`;\n\nconst msg1 = { payload: msg.payload, topic: msg.topic, to: msg.to };\nconst msg2 = {payload: \"success: Thực hiện thông báo thành công!\"};\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 980,
+        "wires": [
+            [
+                "7ab3af43e162fd04"
+            ],
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "56f840a0ad63f266",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 9",
+        "func": "var notification = \n    \"Bạn vừa vi phạm giao thông!\\n\" +\n    \"Cần đến kho bạc nhà nước để đóng phạt hoặc khiếu nại!\\n\" +\n    \"Chúc bạn một ngày tốt lành!\";\n\nconst msg1 = { payload: notification };\nconst msg2 = {payload: \"success: Thực hiện thông báo thành công!\"};\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 940,
+        "wires": [
+            [
+                "787acbd0c36fbc3d"
+            ],
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "ef3232a9d8ab497a",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "core 8",
+        "func": "var payload = {\n    type: \"Notify\"\n};\n\nconst msg1 = { payload: JSON.stringify(payload) };\nconst msg2 = { payload: \"success: Thực hiện thông báo thành công!\" };\n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 900,
+        "wires": [
+            [
+                "7975959196fef2ce"
+            ],
+            [
+                "4a9c17b9a3b23678"
+            ]
+        ]
+    },
+    {
+        "id": "93b38a0c2bab36a2",
+        "type": "ui_template",
+        "z": "a8b7dad562bce556",
+        "group": "ca3e831c95101162",
+        "name": "ChatBox",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "format": "<!-- Chatbox container -->\n<div id=\"chatBox\" style=\"\n    position: fixed;\n    bottom: 20px;\n    right: 20px;\n    width: 320px;\n    height: 420px;\n    display: flex;\n    flex-direction: column;\n    border-radius: 12px;\n    overflow: hidden;\n    box-shadow: \n        0 0 20px rgba(0, 255, 255, 0.3),\n        0 4px 30px rgba(0, 0, 0, 0.6);\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);\n    color: #e0e0e0;\n    z-index: 9999;\n\">\n    <!-- Header -->\n    <div id=\"chatHeader\" style=\"\n        background: linear-gradient(90deg, #0f0f23, #16213e);\n        padding: 12px;\n        font-weight: 600;\n        text-align: center;\n        border-bottom: 1px solid rgba(0, 255, 255, 0.2);\n        color: #00ffff;\n        cursor: pointer;\n        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);\n        transition: all 0.2s ease;\n        position: relative;\n    \">\n        <span style=\"position: relative; z-index: 1;\">💬 Cyber Chat</span>\n        <!-- Glow effect -->\n        <div style=\"\n            position: absolute;\n            top: 0;\n            left: 0;\n            right: 0;\n            bottom: 0;\n            background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);\n            opacity: 0;\n            transition: opacity 0.3s ease;\n        \"></div>\n    </div>\n\n    <!-- Body -->\n    <div id=\"chatWindow\" style=\"\n        flex: 1; \n        overflow-y: auto; \n        padding: 12px; \n        background: rgba(0, 0, 0, 0.3);\n        scrollbar-width: thin;\n        scrollbar-color: rgba(0, 255, 255, 0.5) transparent;\n    \">\n        <p\n            style=\"margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(75, 0, 130, 0.05)); border-top: 3px solid #8a2be2; color: #8a2be2; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); animation: messageSlideIn 0.3s ease;\">\n            <b style=\"color: #8a2be2; text-shadow: 0 0 5px rgba(138, 43, 226, 0.5);\">System:</b> Xin chào, đây là chat\n            box cyber!\n        </p>\n    </div>\n\n    <!-- Footer -->\n    <div id=\"chatFooter\" style=\"\n        display: flex; \n        border-top: 1px solid rgba(0, 255, 255, 0.2); \n        background: linear-gradient(90deg, #0f0f23, #16213e); \n        padding: 10px;\n        transition: all 0.2s ease;\n    \">\n        <input id=\"chatInput\" type=\"text\" placeholder=\"Nhập lệnh cyber...\"\n            style=\"\n                flex: 1; \n                padding: 8px 12px; \n                border: 1px solid rgba(0, 255, 255, 0.3);\n                border-radius: 20px; \n                margin-right: 8px; \n                background: rgba(26, 26, 46, 0.8);\n                color: #e0e0e0;\n                outline: none;\n                transition: all 0.2s ease;\n                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);\n            \"\n            onfocus=\"this.style.borderColor='rgba(0, 255, 255, 0.6)'; this.style.boxShadow='0 0 10px rgba(0, 255, 255, 0.2)';\"\n            onblur=\"this.style.borderColor='rgba(0, 255, 255, 0.3)'; this.style.boxShadow='inset 0 2px 4px rgba(0, 0, 0, 0.3)';\"\n        />\n        <button onclick=\"sendMessage()\" id=\"sendBtn\" style=\"\n            background: linear-gradient(45deg, #00ffff, #0080ff);\n            color: white; \n            border: none; \n            border-radius: 20px; \n            padding: 8px 16px; \n            cursor: pointer;\n            font-weight: 600;\n            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n            transition: all 0.3s ease;\n            box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);\n        \"\n        onmouseover=\"this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(0, 255, 255, 0.5)';\"\n        onmouseout=\"this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0, 255, 255, 0.3)';\"\n        >🚀 Gửi</button>\n    </div>\n</div>\n\n<!-- Nút thu nhỏ -->\n<div id=\"chatToggle\" style=\"\n    position: fixed;\n    bottom: 20px;\n    right: 20px;\n    width: 60px;\n    height: 60px;\n    border-radius: 50%;\n    background: linear-gradient(45deg, #00ffff, #0080ff);\n    color: white;\n    display: none;\n    align-items: center;\n    justify-content: center;\n    cursor: pointer;\n    box-shadow: \n        0 0 20px rgba(0, 255, 255, 0.5),\n        0 4px 20px rgba(0, 0, 0, 0.4);\n    z-index: 9999;\n    transition: all 0.3s ease;\n    animation: pulse 2s infinite;\n\">\n    💬\n</div>\n\n<style>\n    @keyframes messageSlideIn {\n        from {\n            opacity: 0;\n            transform: translateX(-20px);\n        }\n\n        to {\n            opacity: 1;\n            transform: translateX(0);\n        }\n    }\n\n    @keyframes pulse {\n\n        0%,\n        100% {\n            transform: scale(1);\n        }\n\n        50% {\n            transform: scale(1.1);\n            box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);\n        }\n    }\n\n    /* Custom scrollbar */\n    #chatWindow::-webkit-scrollbar {\n        width: 6px;\n    }\n\n    #chatWindow::-webkit-scrollbar-track {\n        background: rgba(0, 0, 0, 0.3);\n        border-radius: 3px;\n    }\n\n    #chatWindow::-webkit-scrollbar-thumb {\n        background: linear-gradient(180deg, #00ffff, #0080ff);\n        border-radius: 3px;\n        box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);\n    }\n\n    #chatWindow::-webkit-scrollbar-thumb:hover {\n        background: linear-gradient(180deg, #0080ff, #00ffff);\n    }\n</style>\n\n<script>\n    async function sendMessage() {\n    var input = document.getElementById(\"chatInput\");\n    var chatWindow = document.getElementById(\"chatWindow\");\n    if (input.value.trim() !== \"\") {\n      var msg = document.createElement(\"p\");\n      msg.style.cssText = \"margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; background: linear-gradient(135deg, rgba(67, 181, 129, 0.2), rgba(0, 255, 0, 0.1)); border-left: 3px solid #00ff00; color: #43b581; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); animation: messageSlideIn 0.3s ease;\";\n      msg.innerHTML = \"<b style='color:#00ff00; text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);'>Bạn:</b> \" + input.value;\n      chatWindow.appendChild(msg);\n      chatWindow.scrollTop = chatWindow.scrollHeight;\n\n      try {\n        let response = await fetch(\"/chat\", {\n          method: \"POST\",\n          headers: {\"Content-Type\": \"application/json\"},\n          body: JSON.stringify({payload: input.value})\n        });\n        let data = await response.json();\n\n        var reply = document.createElement(\"p\");\n        reply.style.cssText = \"margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 128, 255, 0.05)); border-right: 3px solid #00ffff; color: #4da6ff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); animation: messageSlideIn 0.3s ease;\";\n        reply.innerHTML = \"<b style='color:#00ffff; text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);'>Bot:</b> \" + data.payload;\n        chatWindow.appendChild(reply);\n        chatWindow.scrollTop = chatWindow.scrollHeight;\n      } catch (err) {\n        console.error(err);\n        var errorMsg = document.createElement(\"p\");\n        errorMsg.style.cssText = \"margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(75, 0, 130, 0.05)); border-top: 3px solid #8a2be2; color: #ff6b6b; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); animation: messageSlideIn 0.3s ease;\";\n        errorMsg.innerHTML = \"<b style='color:#ff6b6b; text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);'>System:</b> Lỗi kết nối, thử lại nhé!\";\n        chatWindow.appendChild(errorMsg);\n        chatWindow.scrollTop = chatWindow.scrollHeight;\n      }\n\n      input.value = \"\";\n    }\n  }\n\n  // Enter để gửi\n  document.getElementById(\"chatInput\").addEventListener(\"keypress\", function(e) {\n    if (e.key === \"Enter\") {\n      e.preventDefault();\n      sendMessage();\n    }\n  });\n\n  // Click header để thu nhỏ (thêm hover glow)\n  document.getElementById(\"chatHeader\").addEventListener(\"click\", function() {\n    document.getElementById(\"chatBox\").style.display = \"none\";\n    document.getElementById(\"chatToggle\").style.display = \"flex\";\n  });\n  document.getElementById(\"chatHeader\").addEventListener(\"mouseenter\", function() {\n    this.querySelector('div').style.opacity = '1';\n    this.style.boxShadow = 'inset 0 0 20px rgba(0, 255, 255, 0.2)';\n  });\n  document.getElementById(\"chatHeader\").addEventListener(\"mouseleave\", function() {\n    this.querySelector('div').style.opacity = '0';\n    this.style.boxShadow = 'none';\n  });\n\n  // Click nút bong bóng để mở lại\n  document.getElementById(\"chatToggle\").addEventListener(\"click\", function() {\n    document.getElementById(\"chatBox\").style.display = \"flex\";\n    document.getElementById(\"chatToggle\").style.display = \"none\";\n  });\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee83794d0b2471a8",
+        "type": "chatbot-nlpjs",
+        "z": "a8b7dad562bce556",
+        "name": "",
+        "language": "",
+        "debug": false,
+        "scoreThreshold": "50",
+        "x": 510,
+        "y": 1380,
+        "wires": [
+            [
+                "498da09dc08a4aac"
+            ]
+        ]
+    },
+    {
+        "id": "ac159bca02be3470",
+        "type": "chatbot-nlpjs-train",
+        "z": "a8b7dad562bce556",
+        "name": "",
+        "debug": true,
+        "x": 520,
+        "y": 1260,
+        "wires": [
+            [
+                "ddf8019980108c50"
+            ]
+        ]
+    },
+    {
+        "id": "a8d7355cd69c3433",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Train ChatBox",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 1260,
+        "wires": [
+            [
+                "3038a00c32d10b01"
+            ]
+        ]
+    },
+    {
+        "id": "498da09dc08a4aac",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Generate Message",
+        "func": "msg.data = msg.payload;\n\nif (msg.payload.intent === \"greeting\") {\n    msg.payload = { payload: \"Xin chào bạn, tôi có thể giúp gì cho bạn.\" };\n}\nelse if (msg.payload.intent === \"thanks\") {\n    msg.payload = { payload: \"Không có gì, rất vui được giúp bạn.\" };\n}\nelse if (msg.payload.intent === \"goodbye\") {\n    msg.payload = { payload: \"Tạm biệt, hẹn gặp lại bạn sau.\" };\n}\nelse if (msg.payload.intent === \"ask_time\") {\n    msg.payload = { payload: \"Bây giờ là \" + new Date().toLocaleTimeString(\"vi-VN\") };\n}\nelse if (msg.payload.intent === \"ask_weather\") {\n    msg.payload = { payload: \"Thời tiết hiện tại khá dễ chịu, bạn muốn xem chi tiết theo thành phố không?\" };\n}\nelse if (msg.payload.intent === \"ask_date\") {\n    msg.payload = { payload: \"Hôm nay là ngày \" + new Date().toLocaleDateString(\"vi-VN\") };\n}\nelse if (msg.payload.intent === \"ask_day\") {\n    const days = [\"Chủ nhật\",\"Thứ hai\",\"Thứ ba\",\"Thứ tư\",\"Thứ năm\",\"Thứ sáu\",\"Thứ bảy\"];\n    msg.payload = { payload: \"Hôm nay là \" + days[new Date().getDay()] };\n}\nelse if (msg.payload.intent === \"ask_location\") {\n    msg.payload = { payload: \"Bạn đang ở Thành phố Hồ Chí Minh.\" }; // ví dụ cố định\n}\nelse if (msg.payload.intent === \"ask_news\") {\n    msg.payload = { payload: \"Tin tức hôm nay: nhiều sự kiện đáng chú ý đang diễn ra.\" };\n}\nelse if (msg.payload.intent === \"ask_joke\") {\n    msg.payload = { payload: \"Đây là một câu chuyện cười: Vì sao máy tính hay lạnh? Vì nó có nhiều quạt!\" };\n}\nelse if (msg.payload.intent === \"ask_quote\") {\n    msg.payload = { payload: \"Câu nói hay: 'Học, học nữa, học mãi' - Lênin.\" };\n}\nelse if (msg.payload.intent === \"ask_music\") {\n    msg.payload = { payload: \"Bạn muốn nghe nhạc gì? Tôi có thể gợi ý một số bài hát nổi tiếng.\" };\n}\nelse if (msg.payload.intent === \"ask_movie\") {\n    msg.payload = { payload: \"Có nhiều phim hay, ví dụ: 'Inception', 'Parasite'.\" };\n}\nelse if (msg.payload.intent === \"ask_food\") {\n    msg.payload = { payload: \"Bạn có thể thử phở, bún bò, hoặc cơm tấm.\" };\n}\nelse if (msg.payload.intent === \"ask_drink\") {\n    msg.payload = { payload: \"Bạn có thể uống cà phê sữa đá hoặc trà chanh.\" };\n}\nelse if (msg.payload.intent === \"ask_game\") {\n    msg.payload = { payload: \"Bạn có thể chơi cờ vua, Liên Quân, hoặc Among Us.\" };\n}\nelse if (msg.payload.intent === \"ask_sport\") {\n    msg.payload = { payload: \"Tin thể thao: bóng đá Việt Nam đang chuẩn bị cho giải đấu mới.\" };\n}\nelse if (msg.payload.intent === \"ask_math\") {\n    msg.payload = { payload: \"Bạn có thể đưa bài toán, tôi sẽ giúp giải.\" };\n}\nelse if (msg.payload.intent === \"ask_translate\") {\n    msg.payload = { payload: \"Bạn muốn dịch câu nào? Hãy nhập nội dung.\" };\n}\nelse if (msg.payload.intent === \"ask_reminder\") {\n    msg.payload = { payload: \"Tôi sẽ giúp bạn đặt nhắc nhở, hãy cho tôi biết thời gian và nội dung.\" };\n}\nelse {\n    msg.payload = { payload: \"Xin lỗi, tôi chưa hiểu ý bạn.\" };\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1380,
+        "wires": [
+            [
+                "0eaf8855eade2140"
+            ]
+        ]
+    },
+    {
+        "id": "69e1a5b405182e90",
+        "type": "http in",
+        "z": "a8b7dad562bce556",
+        "name": "ChatBot In",
+        "url": "/chat",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 1380,
+        "wires": [
+            [
+                "2083c67b16aaed4a"
+            ]
+        ]
+    },
+    {
+        "id": "2083c67b16aaed4a",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Prepare Data",
+        "func": "msg.payload = msg.payload.payload || \"\";\nflow.set(\"data\", msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1380,
+        "wires": [
+            [
+                "ee83794d0b2471a8"
+            ]
+        ]
+    },
+    {
+        "id": "ddf8019980108c50",
+        "type": "chatbot-nlpjs-save",
+        "z": "a8b7dad562bce556",
+        "filename": "default",
+        "outputs": 0,
+        "x": 750,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "41c273e3b931b525",
+        "type": "chatbot-nlpjs-load",
+        "z": "a8b7dad562bce556",
+        "filename": "default",
+        "name": "default",
+        "x": 290,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "544b3b5c0b6f919f",
+        "type": "inject",
+        "z": "a8b7dad562bce556",
+        "name": "Load ChatBox",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 1320,
+        "wires": [
+            [
+                "41c273e3b931b525"
+            ]
+        ]
+    },
+    {
+        "id": "0beab7ae7985fbae",
+        "type": "http response",
+        "z": "a8b7dad562bce556",
+        "name": "ChatBot Out",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "3038a00c32d10b01",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Prepare Dataset",
+        "func": "msg.payload = {\n  intents: {\n    vi: {\n      thanks: [\n        \"Cảm ơn\", \"Cảm ơn bạn\", \"Cảm ơn nhiều\", \"Cảm ơn nhiều lắm\",\n        \"Xin cảm ơn\", \"Cám ơn nhé\", \"Cảm ơn bạn rất nhiều\",\n        \"Thanks\", \"Thank you\", \"Thanks a lot\", \"Much appreciated\"\n      ],\n      greeting: [\n        \"Xin chào\", \"Xin chào bạn\", \"Chào bạn\", \"Hello\", \"Hi bạn\",\n        \"Rất vui gặp bạn\", \"Chào buổi sáng\", \"Chào buổi tối\",\n        \"Hey\", \"Chào cậu\", \"Hello there\"\n      ],\n      goodbye: [\n        \"Tạm biệt\", \"Bye\", \"Hẹn gặp lại\", \"See you later\", \"Chào tạm biệt\"\n      ],\n      ask_time: [\n        \"Mấy giờ rồi\", \"Bây giờ là mấy giờ\", \"Giờ hiện tại\", \"Cho tôi biết thời gian\"\n      ],\n      ask_weather: [\n        \"Thời tiết hôm nay thế nào\", \"Ngoài trời ra sao\", \"Dự báo thời tiết\", \"Trời hôm nay thế nào\"\n      ],\n      ask_date: [\n        \"Hôm nay là ngày gì\", \"Ngày tháng năm hiện tại\", \"Hôm nay là ngày bao nhiêu\"\n      ],\n      ask_day: [\n        \"Hôm nay là thứ mấy\", \"Ngày này là thứ gì\", \"Cho tôi biết hôm nay là thứ mấy\"\n      ],\n      ask_location: [\n        \"Tôi đang ở đâu\", \"Bạn có biết vị trí của tôi không\", \"Cho tôi biết địa điểm hiện tại\"\n      ],\n      ask_news: [\n        \"Tin tức hôm nay\", \"Có gì mới không\", \"Cho tôi biết tin tức mới nhất\"\n      ],\n      ask_joke: [\n        \"Kể chuyện cười đi\", \"Cho tôi một câu đùa\", \"Bạn có biết chuyện vui nào không\"\n      ],\n      ask_quote: [\n        \"Cho tôi một câu nói hay\", \"Trích dẫn nổi tiếng\", \"Câu nói truyền cảm hứng\"\n      ],\n      ask_music: [\n        \"Phát nhạc đi\", \"Cho tôi nghe một bài hát\", \"Mở nhạc\"\n      ],\n      ask_movie: [\n        \"Phim gì hay\", \"Đề xuất phim\", \"Có phim nào mới không\"\n      ],\n      ask_food: [\n        \"Ăn gì bây giờ\", \"Gợi ý món ăn\", \"Tôi nên ăn gì\"\n      ],\n      ask_drink: [\n        \"Uống gì bây giờ\", \"Gợi ý đồ uống\", \"Tôi nên uống gì\"\n      ],\n      ask_game: [\n        \"Chơi game gì\", \"Đề xuất trò chơi\", \"Có game nào vui không\"\n      ],\n      ask_sport: [\n        \"Tin thể thao hôm nay\", \"Kết quả bóng đá\", \"Có trận nào tối nay không\"\n      ],\n      ask_math: [\n        \"Giải toán giúp tôi\", \"Tính toán\", \"Làm phép cộng trừ\"\n      ],\n      ask_translate: [\n        \"Dịch sang tiếng Anh\", \"Dịch sang tiếng Việt\", \"Translate this\"\n      ],\n      ask_reminder: [\n        \"Đặt nhắc nhở\", \"Nhắc tôi việc này\", \"Tạo reminder\"\n      ]\n    }\n  }\n};\n\nflow.set(\"dataset\", msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1260,
+        "wires": [
+            [
+                "ac159bca02be3470"
+            ]
+        ]
+    },
+    {
+        "id": "0eaf8855eade2140",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Combine Message",
+        "func": "let responses = flow.get(\"responses\") || []; \n// thêm vào cuối mảng \nresponses.push(msg.payload.payload); \nflow.set(\"responses\", responses); \nmsg.payload = msg.data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1380,
+        "wires": [
+            [
+                "225d29c0e867dc4b"
+            ]
+        ]
+    },
+    {
+        "id": "225d29c0e867dc4b",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Dispatcher",
+        "func": "let dataset = flow.get(\"dataset\") || {};\nlet intent = msg.payload.intent;\nlet text = flow.get(\"data\") || \"\";\n\n// Escape regex ký tự đặc biệt\nfunction escapeRegex(s) {\n    return s.replace(/[.*+?^${}()|[\\]\\\\]/g, \"\\\\$&\");\n}\n\n// Chuẩn hoá text: bỏ dấu câu, đưa về lower-case\nfunction normalize(str) {\n    return str.toLowerCase().replace(/[,\\.;:!?]/g, \"\").trim();\n}\n\nif (dataset.intents && dataset.intents.vi && dataset.intents.vi[intent]) {\n    const utterances = dataset.intents.vi[intent].map(u => normalize(u));\n    let textNorm = normalize(text);\n    const oldText = textNorm;\n    let changed = false;\n\n    // Thử từng utterance bằng regex không phân biệt hoa/thường\n    for (let u of utterances) {\n        const regex = new RegExp(\"\\\\b\" + escapeRegex(u) + \"\\\\b\", \"i\");\n        if (regex.test(textNorm)) {\n            textNorm = textNorm.replace(regex, \"\").trim();\n            changed = true;\n            break; // đã xử lý intent này, thoát luôn\n        }\n    }\n\n    text = textNorm;\n\n    // Nếu không thay đổi, buộc thoát để tránh vòng lặp vô hạn\n    if (!changed || text === oldText) {\n        text = \"\";\n    }\n\n    flow.set(\"data\", text);\n} else {\n    // Fallback: intent không có trong dataset\n    let responses = flow.get(\"responses\") || [];\n    if (!responses.includes(\"Xin lỗi, tôi chưa hiểu ý bạn.\")) {\n        responses.push(\"Xin lỗi, tôi chưa hiểu ý bạn.\");\n    }\n    flow.set(\"responses\", responses);\n    text = \"\";\n    flow.set(\"data\", text);\n}\n\n// Nhánh xuất\nif (text && text.length > 0) {\n    // còn phần chưa xử lý => quay lại cổng 1 để classifier tìm intent tiếp theo\n    msg.payload = text;\n    return [msg, null];\n} else {\n    // hết phần chưa xử lý => join và clear\n    let responses = flow.get(\"responses\") || [];\n    const finalResponse = responses.join(\" \");\n\n    flow.set(\"responses\", []);\n    flow.set(\"data\", \"\");\n\n    msg.payload = finalResponse;\n    return [null, msg];\n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1460,
+        "wires": [
+            [
+                "ee83794d0b2471a8"
+            ],
+            [
+                "157100e229455814"
+            ]
+        ]
+    },
+    {
+        "id": "157100e229455814",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Prepare Data",
+        "func": "msg.payload = {payload: msg.payload};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1460,
+        "wires": [
+            [
+                "0beab7ae7985fbae"
+            ]
+        ]
+    },
+    {
+        "id": "b7d10944739880a1",
+        "type": "http request",
+        "z": "a8b7dad562bce556",
+        "name": "phone",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1190,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "787acbd0c36fbc3d",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Prepare Data",
+        "func": "const message = encodeURIComponent(msg.payload || \"\");\n\nmsg.url = \"https://www.pushsafer.com/api\"\n        + \"?k=owqOKgLJxtJ5m889IYjg\"\n        + \"&m=\" + message;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 940,
+        "wires": [
+            [
+                "b7d10944739880a1"
+            ]
+        ]
+    },
+    {
+        "id": "7ab3af43e162fd04",
+        "type": "e-mail",
+        "z": "a8b7dad562bce556",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1010,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "4a9c17b9a3b23678",
+        "type": "ui_template",
+        "z": "a8b7dad562bce556",
+        "group": "ca3e831c95101162",
+        "name": "Toast Notify",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    #toast-container {\n        position: fixed;\n        top: 20px;\n        right: 20px;\n        z-index: 999999;\n        display: flex;\n        flex-direction: column;\n        gap: 12px;\n        pointer-events: none;\n    }\n\n    .toast {\n        position: relative;\n        padding: 16px 20px;\n        min-width: 280px;\n        max-width: 380px;\n        color: #fff;\n        font-size: 14px;\n        border-radius: 12px;\n        display: flex;\n        align-items: center;\n        gap: 12px;\n        background: rgba(30, 30, 30, 0.75);\n        backdrop-filter: blur(12px);\n        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);\n        overflow: hidden;\n\n        opacity: 0;\n        transform: translateX(40px);\n        animation: slideIn 0.45s ease forwards,\n            fadeOut 0.6s ease 4.5s forwards;\n    }\n\n    /* --- Glowing border animation --- */\n    .toast::before {\n        content: \"\";\n        position: absolute;\n        inset: 0;\n        border-radius: 12px;\n        padding: 2px;\n        background: linear-gradient(130deg,\n                #16a34a,\n                #22d3ee,\n                #6366f1,\n                #f43f5e,\n                #f59e0b);\n        background-size: 300% 300%;\n        animation: glowBorder 3s linear infinite;\n        -webkit-mask:\n            linear-gradient(#fff 0 0) content-box,\n            linear-gradient(#fff 0 0);\n        -webkit-mask-composite: xor;\n        mask-composite: exclude;\n    }\n\n    /* màu theo loại */\n    .toast.success::before {\n        filter: hue-rotate(0deg);\n    }\n\n    .toast.error::before {\n        filter: hue-rotate(280deg);\n    }\n\n    .toast.warning::before {\n        filter: hue-rotate(80deg);\n    }\n\n    .toast.info::before {\n        filter: hue-rotate(180deg);\n    }\n\n    @keyframes glowBorder {\n        0% {\n            background-position: 0% 50%;\n        }\n\n        50% {\n            background-position: 100% 50%;\n        }\n\n        100% {\n            background-position: 0% 50%;\n        }\n    }\n\n    @keyframes slideIn {\n        to {\n            opacity: 1;\n            transform: translateX(0);\n        }\n    }\n\n    @keyframes fadeOut {\n        to {\n            opacity: 0;\n            transform: translateX(40px);\n        }\n    }\n\n    .icon {\n        font-size: 20px;\n        opacity: 0.9;\n    }\n</style>\n\n\n<div id=\"toast-container\"></div>\n\n<script>\n    (function(scope) {\n\n    scope.$watch(\"msg\", function(msg) {\n        if (!msg || !msg.payload) return;\n\n        let raw = String(msg.payload);\n        let type = \"info\";\n        let text = raw;\n\n        if (raw.startsWith(\"success:\")) { type = \"success\"; text = raw.replace(\"success:\", \"\").trim(); }\n        else if (raw.startsWith(\"error:\")) { type = \"error\"; text = raw.replace(\"error:\", \"\").trim(); }\n        else if (raw.startsWith(\"warning:\")) { type = \"warning\"; text = raw.replace(\"warning:\", \"\").trim(); }\n        else if (raw.startsWith(\"info:\")) { type = \"info\"; text = raw.replace(\"info:\", \"\").trim(); }\n\n        const icons = {\n            success: \"✔\",\n            error: \"✖\",\n            warning: \"⚠\",\n            info: \"ℹ\"\n        };\n\n        const toast = document.createElement(\"div\");\n        toast.className = \"toast \" + type;\n        toast.innerHTML = `\n            <div class=\"icon\">${icons[type]}</div>\n            <div>${text}</div>\n        `;\n\n        const container = document.getElementById(\"toast-container\");\n        container.appendChild(toast);\n\n        setTimeout(() => toast.remove(), 5000);\n    });\n\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1030,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dca5b9467d8c56d",
+        "type": "ui_template",
+        "z": "a8b7dad562bce556",
+        "group": "ca3e831c95101162",
+        "name": "Form",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* Overlay mờ */\n    #custom-modal-overlay {\n        position: fixed;\n        inset: 0;\n        background: rgba(0, 0, 0, 0.45);\n        backdrop-filter: blur(4px);\n        display: none;\n        justify-content: center;\n        align-items: center;\n        z-index: 999998;\n    }\n\n    /* Popup */\n    #custom-modal {\n        width: 380px;\n        padding: 22px;\n        background: rgba(255, 255, 255, 0.10);\n        border: 1px solid rgba(255, 255, 255, 0.2);\n        backdrop-filter: blur(16px);\n        border-radius: 14px;\n        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);\n        color: #fff;\n        opacity: 0;\n        transform: scale(0.85);\n        transition: 0.25s ease;\n    }\n\n    #custom-modal.show {\n        opacity: 1;\n        transform: scale(1);\n    }\n\n    /* Title */\n    #custom-modal h3 {\n        margin: 0 0 10px 0;\n        font-size: 18px;\n        font-weight: 600;\n    }\n\n    /* Buttons */\n    .modal-btns {\n        display: flex;\n        justify-content: flex-end;\n        margin-top: 20px;\n        gap: 10px;\n    }\n\n    .btn {\n        padding: 8px 16px;\n        border-radius: 8px;\n        cursor: pointer;\n        border: none;\n        font-weight: 500;\n        transition: 0.2s;\n    }\n\n    .btn.cancel {\n        background: rgba(255, 255, 255, 0.15);\n        color: #fff;\n    }\n\n    .btn.cancel:hover {\n        background: rgba(255, 255, 255, 0.25);\n    }\n\n    .btn.ok {\n        background: #2563eb;\n        color: #fff;\n    }\n\n    .btn.ok:hover {\n        background: #1d4ed8;\n    }\n</style>\n\n<!-- Modal -->\n<div id=\"custom-modal-overlay\">\n    <div id=\"custom-modal\">\n        <h3>Xác nhận thao tác</h3>\n        <p>Bạn có chắc muốn thực hiện hành động này?</p>\n        <div class=\"modal-btns\">\n            <button class=\"btn cancel\" ng-click=\"cancelModal()\">Hủy</button>\n            <button class=\"btn ok\" ng-click=\"confirmModal()\">Đồng ý</button>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n    const overlay = document.getElementById(\"custom-modal-overlay\");\n    const modal = document.getElementById(\"custom-modal\");\n   \n    // Biến lưu fromnode tạm thời\n    scope.currentFromNode = null;\n   \n    scope.$watch(\"msg\", function(msg) {\n        if (!msg || !msg.payload) return;\n        let p = msg.payload;\n        if (p && p.action === \"showForm\") {\n            // Thêm check: Nếu fromnode rỗng, warn và không show modal\n            if (!p.fromnode || p.fromnode.toString().trim() === \"\") {\n                console.warn(\"Modal: fromnode rỗng → Không show modal\");  // Log browser console\n                return;  // Bỏ qua, không show\n            }\n            scope.currentFromNode = p.fromnode;  // Lưu chỉ nếu hợp lệ\n            showModal();\n        }\n        if (p && p.action === \"hideForm\") {\n            hideModal();\n        }\n    });\n\n    function showModal() {\n        overlay.style.display = \"flex\";\n        setTimeout(() => modal.classList.add(\"show\"), 20);\n    }\n\n    function hideModal() {\n        modal.classList.remove(\"show\");\n        setTimeout(() => overlay.style.display = \"none\", 200);\n        scope.currentFromNode = null;  // Reset\n    }\n\n    scope.cancelModal = function() {\n        let result = { action: \"cancelled\" };\n        if (scope.currentFromNode !== null && scope.currentFromNode.toString().trim() !== \"\") {\n            result.fromnode = scope.currentFromNode;\n        }\n        hideModal();\n        scope.send({ payload: result });\n    };\n\n    scope.confirmModal = function() {\n        let result = { action: \"confirmed\" };\n        if (scope.currentFromNode !== null && scope.currentFromNode.toString().trim() !== \"\") {\n            result.fromnode = scope.currentFromNode;\n        }\n        hideModal();\n        scope.send({ payload: result });\n    };\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 450,
+        "y": 900,
+        "wires": [
+            [
+                "a3ae76c9a0a1400a"
+            ]
+        ]
+    },
+    {
+        "id": "a3ae76c9a0a1400a",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Check",
+        "func": "let p = msg.payload;\n\nif (p && p.action === \"confirmed\") {\n    // Người dùng bấm Đồng ý\n    let fromNode = (p.fromnode || \"\").toString().trim();  // Trim space thừa, convert sang string nếu cần\n    if (fromNode === \"Lock Request\") {\n\n        return [msg, null, null, null, null, null, null, null];\n    } else if (fromNode === \"Lock\") {\n        return [null, msg, null, null, null, null, null, null];\n    } else if (fromNode === \"Unlock\") {\n        return [null, null, msg, null, null, null, null, null];\n    } else if (fromNode === \"Notify Buzzer\") {\n        return [null, null, null, msg, null, null, null, null];\n    } else if (fromNode === \"Notify Phone\") {\n        return [null, null, null, null, msg, null, null, null];\n    } else if (fromNode === \"Notify Email\") {\n        return [null, null, null, null, null, msg, null, null];\n    } else if (fromNode === \"Clear Violation\") {\n        return [null, null, null, null, null, null, msg, null];\n    } else {\n        // fromnode không khớp → return 8 nulls\n        return new Array(8).fill(null);\n    }\n}\n\nif (p && p.action === \"cancelled\") {\n    // Người dùng bấm Hủy → luôn 8 nulls\n    return new Array(8).fill(null);\n}\n\n// Các trường hợp khác\nreturn new Array(8).fill(null);",
+        "outputs": 7,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 900,
+        "wires": [
+            [
+                "aa1bb2ea3e314350"
+            ],
+            [
+                "37bdfc5c70690b99"
+            ],
+            [
+                "a4072e969b813247"
+            ],
+            [
+                "ef3232a9d8ab497a"
+            ],
+            [
+                "56f840a0ad63f266"
+            ],
+            [
+                "59da42f5c37a15f7"
+            ],
+            [
+                "bea27f517f04a9e7"
+            ]
+        ]
+    },
+    {
+        "id": "7326b163b12abb97",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "Show Form",
+        "func": "// Check nếu rỗng để tránh show modal thừa\nif (!msg.payload || msg.payload === \"\" || msg.payload === undefined || msg.payload === null) {\n    return null;\n}\n\n// Wrap thành object\nmsg.payload = { action: \"showForm\", fromnode: msg.payload };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 900,
+        "wires": [
+            [
+                "3dca5b9467d8c56d"
+            ]
+        ]
+    },
+    {
+        "id": "f335eb7f8a0a60f9",
+        "type": "function",
+        "z": "a8b7dad562bce556",
+        "name": "AI",
+        "func": "// Inputs từ flow (node trước đó set vào)\nconst T = flow.get(\"temperature\");    // °C, cảm biến gần pô\nconst H = flow.get(\"humidity\");       // %, cảm biến gần pô\n\n// Nếu chưa có dữ liệu thì bỏ qua\nif (T === undefined || H === undefined) {\n    msg.payload = \"Chưa có dữ liệu cảm biến\";\n    return msg;\n}\n\n// Chuẩn hóa đơn giản cho T, H\nfunction nT(v){ return Math.min(1, Math.max(0, (v - 60) / (220 - 60))); } // 60–220°C\nfunction nH(v){ return Math.min(1, Math.max(0, (v - 20) / (90 - 20))); }  // 20–90%\n\nconst t = nT(T);\nconst h = nH(H);\n\n// Quy tắc baseline: tính hai thành phần nguy cơ\nconst riskNOx  = Math.max(0, Math.min(100, 100 * (0.8*t - 0.2*h)));\nconst riskHCCO = Math.max(0, Math.min(100, 100 * (0.6*(1 - t) + 0.4*h)));\n\n// Điểm nguy cơ tổng hợp (target tạm để mô hình học theo)\nlet y = Math.round(0.5 * riskNOx + 0.5 * riskHCCO);\n\n// Cho phép ghi đè target nếu có nhãn thực (vd. đo CO/HC)\nconst yOverride = flow.get(\"emissionsLabel\"); // 0–100 nếu có\nif (typeof yOverride === \"number\") y = yOverride;\n\n// Tập dữ liệu huấn luyện\nlet X = flow.get(\"trainX\") || [];\nlet Y = flow.get(\"trainY\") || [];\nX.push([t, h, t*h, t*t, h*h]); // thêm đặc trưng tương tác và phi tuyến\nY.push(y);\n\nflow.set(\"trainX\", X);\nflow.set(\"trainY\", Y);\n\n// Trọng số cho 5 đặc trưng + bias\nlet W = flow.get(\"weights\") || [0, 0, 0, 0, 0];\nlet b = flow.get(\"bias\") || 0;\n\n// Huấn luyện bằng SGD\nconst lr = 0.02;\nconst epochs = 5;\n\nfor (let e = 0; e < epochs; e++) {\n  for (let i = 0; i < X.length; i++) {\n    const xi = X[i];\n    const yi = Y[i];\n    const pred = W[0]*xi[0] + W[1]*xi[1] + W[2]*xi[2] + W[3]*xi[3] + W[4]*xi[4] + b;\n    const err = yi - pred;\n\n    // cập nhật trọng số\n    for (let k = 0; k < W.length; k++) {\n      W[k] += lr * err * xi[k];\n    }\n    b += lr * err;\n  }\n}\n\nflow.set(\"weights\", W);\nflow.set(\"bias\", b);\n\n// Dự đoán hiện tại\nconst xNow = [t, h, t*h, t*t, h*h];\nlet pred = W[0]*xNow[0] + W[1]*xNow[1] + W[2]*xNow[2] + W[3]*xNow[3] + W[4]*xNow[4] + b;\npred = Math.max(0, Math.min(100, pred));\n\n// Lưu lại để đồng bộ với flow\nflow.set(\"environmentDanger\", pred);\n\n// Xuất kết quả: chỉ một số duy nhất cho chart\nmsg.payload = pred;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 640,
+        "wires": [
+            [
+                "8926b10b94454dfc"
+            ]
+        ]
+    },
+    {
+        "id": "7ff99e5be6390be6",
+        "type": "debug",
+        "z": "a8b7dad562bce556",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "91cae4e300f0f441",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-chatbot": "1.2.4",
+            "node-red-node-email": "5.0.2"
+        }
+    }
+]
