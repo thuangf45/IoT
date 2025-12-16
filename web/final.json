@@ -1,0 +1,22 @@
+[
+    {
+        "id": "691e4b827a8bbdd4",
+        "type": "function",
+        "z": "8643b3f6744861e3",
+        "name": "Generate Message",
+        "func": "// 1. Lấy Intent an toàn (Tránh lỗi undefined cho Dispatcher)\nvar intent = (msg.payload && msg.payload.intent) ? msg.payload.intent : \"None\";\n\n// 2. Lấy dữ liệu cảm biến (cho các câu hỏi thông số)\nvar temp = flow.get(\"temperature\") || 0;\nvar hum  = flow.get(\"humidity\") || 0;\nvar vel  = flow.get(\"velocity\") || 0;\nvar dist = flow.get(\"distance\") || 0;\nvar light = flow.get(\"brightness\") || 0;\nvar viol = flow.get(\"violationHistory\") || [];\n\nvar responseText = \"\";\n\n// 3. LOGIC TRẢ LỜI\n\n// --- Nhóm Thông số Cảm biến ---\nif (intent === \"ask_temp\") {\n    responseText = `Nhiệt độ hiện tại là ${temp}°C.`;\n    if(temp > 40) responseText += \" (Khá nóng, hãy cẩn thận!)\";\n}\nelse if (intent === \"ask_humidity\") {\n    responseText = `Độ ẩm môi trường là ${hum}%.`;\n}\nelse if (intent === \"ask_velocity\") {\n    responseText = `Xe đang chạy với tốc độ ${vel} km/h.`;\n    if(vel > 60) responseText += \" (Bạn đang chạy quá tốc độ!)\";\n}\nelse if (intent === \"ask_distance\") {\n    responseText = `Khoảng cách đến vật cản trước mặt: ${dist} cm.`;\n}\nelse if (intent === \"ask_brightness\") {\n    var status = (light < 1200) ? \"Trời tối (Đèn tự bật)\" : \"Trời sáng (Đèn tắt)\";\n    responseText = `Cường độ sáng: ${light} lux. -> ${status}.`;\n}\nelse if (intent === \"ask_violation\") {\n    if(viol.length === 0) responseText = \"Tuyệt vời! Bạn chưa có lỗi vi phạm nào.\";\n    else responseText = `Hệ thống ghi nhận bạn đã có ${viol.length} lần vi phạm an toàn.`;\n}\nelse if (intent === \"ask_all_system\") {\n    responseText = `📊 Báo cáo: Nhiệt độ ${temp}°C | Độ ẩm ${hum}% | Tốc độ ${vel}km/h | Vật cản ${dist}cm.`;\n}\n\n// --- Nhóm Giải thích Chức năng App (MỚI) ---\nelse if (intent === \"explain_lock\") {\n    responseText = \"🔒 Chức năng **Lock Request**: Dùng để ngắt Relay, tắt máy xe từ xa nhằm chống trộm hoặc khi không sử dụng.\";\n}\nelse if (intent === \"explain_unlock\") {\n    responseText = \"🔓 Chức năng **Unlock**: Dùng để đóng Relay, mở khóa điện cho phép xe hoạt động bình thường trở lại.\";\n}\nelse if (intent === \"explain_buzzer\") {\n    responseText = \"🔊 Chức năng **Notify Buzzer**: Kích hoạt còi chíp trên xe kêu 'bíp bíp'. Dùng để tìm xe trong bãi hoặc cảnh báo người xung quanh.\";\n}\nelse if (intent === \"explain_phone\") {\n    responseText = \"📱 Chức năng **Notify Phone**: Gửi thông báo đẩy (Push Notification) về điện thoại của chủ xe thông qua ứng dụng Pushsafer.\";\n}\nelse if (intent === \"explain_email\") {\n    responseText = \"📧 Chức năng **Notify Email**: Gửi một email cảnh báo chi tiết (thời gian, địa điểm, lỗi) đến hộp thư của chủ xe.\";\n}\nelse if (intent === \"explain_clear\") {\n    responseText = \"🗑️ Chức năng **Clear Violation**: Xóa toàn bộ lịch sử vi phạm đã lưu tạm thời trên hệ thống (Reset bộ đếm về 0).\";\n}\n\n// --- Nhóm Xã giao ---\nelse if (intent === \"greeting\") responseText = \"Xin chào! Tôi là trợ lý ảo IoT. Bạn cần kiểm tra thông số hay hỏi về chức năng nào?\";\nelse if (intent === \"thanks\") responseText = \"Không có chi! Rất vui được hỗ trợ bạn.\";\nelse if (intent === \"goodbye\") responseText = \"Tạm biệt! Lái xe an toàn nhé.\";\n\n// --- Fallback ---\nelse {\n    responseText = \"Xin lỗi, tôi chưa hiểu rõ. Bạn có thể hỏi 'Nhiệt độ', 'Lock để làm gì' hoặc 'Báo cáo hệ thống'.\";\n}\n\n// 4. QUAN TRỌNG: Đóng gói lại payload để Dispatcher hoạt động\nmsg.payload.payload = responseText;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1380,
+        "wires": [
+            [
+                "6d2a750f8fb61d3e"
+            ]
+        ]
+    }
+]
